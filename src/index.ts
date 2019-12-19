@@ -8,7 +8,7 @@ interface OsuBeatmapDlOptions {
 
 export default (options: OsuBeatmapDlOptions): Promise<void> => {
   // Default options
-  const { beatmapsetID, downloadFolder = '', noVideo = false } = options
+  const { beatmapsetID, downloadFolder = '.', noVideo = false } = options
 
   // Use bloodcat provider
   const bloodcat = new BloodcatProvider()
