@@ -1,5 +1,5 @@
 {
-  "name": "osu-beatmap-dl",
+  "name": "osu-map-dl",
   "description": "Simple and easy-to-use node package for downloading osu! beatmaps from either osu website or bloodcat.",
   "version": "0.1.0",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loarca/osu-beatmap-dl.git"
+    "url": "git+https://github.com/loarca/osu-map-dl.git"
   },
   "keywords": [
     "osu",
@@ -31,9 +31,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/loarca/osu-beatmap-dl/issues"
+    "url": "https://github.com/loarca/osu-map-dl/issues"
   },
-  "homepage": "https://github.com/loarca/osu-beatmap-dl#readme",
+  "homepage": "https://github.com/loarca/osu-map-dl#readme",
   "devDependencies": {
     "@types/node": "^12.12.14",
     "@typescript-eslint/eslint-plugin": "^2.9.0",
