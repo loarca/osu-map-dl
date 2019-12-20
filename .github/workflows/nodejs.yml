@@ -7,18 +7,12 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [6.0.0]
-
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 12.x
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: update npm
-      run: npm i -g npm
+        node-version: 12.x
     - name: npm ci
       run: npm ci
     - name: npm lint
@@ -27,20 +21,33 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [6.0.0]
-
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 6.0.0
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: update npm
-      run: npm i -g npm
-    - name: npm ci
-      run: npm ci
+        node-version: 6.0.0
+    - name: npm install
+      run: npm install
     - name: npm build
       run: npm run build
-      
+  # test:
+  #   name: Test
+  #   runs-on: ubuntu-latest
+
+  #   strategy:
+  #     matrix:
+  #       node-version: [6.0.0, 7.6.0]
+
+  #   steps:
+  #   - uses: actions/checkout@v1
+  #   - name: Use Node.js ${{ matrix.node-version }}
+  #     uses: actions/setup-node@v1
+  #     with:
+  #       node-version: ${{ matrix.node-version }}
+  #   - name: npm install
+  #     run: npm install
+  #   - name: npm build
+  #     run: npm run build
+  #   - name: npm test
+  #     run: npm run test
