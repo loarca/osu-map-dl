@@ -1,6 +1,6 @@
 # Changelog
 
-## [v0.1.1](https://github.com/loarca/osu-map-dl/tree/v0.1.1) (2019-12-19)
+## [v0.1.1](https://github.com/loarca/osu-map-dl/tree/v0.1.1) (2019-12-20)
 
 [Full Changelog](https://github.com/loarca/osu-map-dl/compare/v0.1.0...v0.1.1)
 
