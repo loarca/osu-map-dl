@@ -6,7 +6,7 @@ interface OsuBeatmapDlOptions {
   downloadFolder?: string
 }
 
-export default (options: OsuBeatmapDlOptions): Promise<void> => {
+const downloadMap = (options: OsuBeatmapDlOptions): Promise<void> => {
   // Default options
   const { beatmapsetID, downloadFolder = '.', noVideo = false } = options
 
@@ -16,3 +16,9 @@ export default (options: OsuBeatmapDlOptions): Promise<void> => {
   // Download
   return bloodcat.download(beatmapsetID, downloadFolder, noVideo)
 }
+
+// Export for CommonJS
+module.exports = exports = downloadMap
+
+// Export for ES Modules
+export default downloadMap
