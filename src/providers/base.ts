@@ -1,7 +1,7 @@
 import { AxiosResponse } from 'axios'
 import { Readable } from 'stream'
-import fs from 'fs'
-import path from 'path'
+import * as fs from 'fs'
+import * as path from 'path'
 
 export abstract class BaseProvider {
   public async download (beatmapsetID: number, downloadFolder: string, noVideo: boolean): Promise<void> {
