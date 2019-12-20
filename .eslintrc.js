@@ -22,7 +22,10 @@ module.exports = {
       }
     }],
     '@typescript-eslint/indent': 'off', // This is the job of StandardJS, they are competing rules so we turn off the Typescript one.
-    '@typescript-eslint/no-explicit-any': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/explicit-function-return-type': ['error', {
+      allowExpressions: true
+    }]
   },
   plugins: [
     '@typescript-eslint'
