@@ -1,5 +1,14 @@
 # Changelog
 
+## [v0.1.2](https://github.com/loarca/osu-map-dl/tree/v0.1.2) (2019-12-26)
+
+[Full Changelog](https://github.com/loarca/osu-map-dl/compare/v0.1.1...v0.1.2)
+
+**Implemented enhancements:**
+
+- User agent for requests [\#10](https://github.com/loarca/osu-map-dl/issues/10)
+- Add osu!website provider [\#1](https://github.com/loarca/osu-map-dl/issues/1)
+
 ## [v0.1.1](https://github.com/loarca/osu-map-dl/tree/v0.1.1) (2019-12-20)
 
 [Full Changelog](https://github.com/loarca/osu-map-dl/compare/v0.1.0...v0.1.1)
