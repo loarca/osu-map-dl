@@ -39,7 +39,7 @@ export class OsuWebsiteProvider extends BaseProvider {
 
       // Log in
       await this.axios.post('/session', stringify({
-        _token,
+        _token: _token || '',
         username,
         password
       }))
