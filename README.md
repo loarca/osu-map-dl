@@ -22,7 +22,10 @@ const downloadBeatmapset = require('osu-map-dl');
 downloadBeatmapset({
   beatmapsetID: 16653, // ID number representing the beatmap set to download
   downloadFolder: '.', // (optional) Folder where the .osz file will be saved
-  noVideo: false // (optional) true if video is not desired, false otherwise
+  noVideo: false, // (optional) true if video is not desired, false otherwise
+  preference: 'osu!website', // (optional) 'osu!website' or 'bloodcat' if one fails the other will be used
+  banchoUsername: undefined, // (optional) username if downloading from osu!website
+  banchoPassword: undefined // (optional) password if downloading from osu!website
 }).then(() => console.log('Beatmap has been successfully downloaded!'))
   .catch(e => console.error(e));
 ````
