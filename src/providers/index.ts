@@ -5,3 +5,4 @@ const { name, version } = require('../../package.json')
 axios.defaults.headers['User-Agent'] = `${name}/${version}`
 
 export * from './bloodcat'
+export * from './osu'
