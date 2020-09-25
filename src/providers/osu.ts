@@ -51,7 +51,6 @@ export class OsuWebsiteProvider extends BaseProvider {
       this.loggedIn = true
       return true
     } catch {
-      console.log('osu provider failed')
       return false
     }
   }
