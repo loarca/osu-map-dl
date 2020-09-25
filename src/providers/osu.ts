@@ -42,11 +42,16 @@ export class OsuWebsiteProvider extends BaseProvider {
         _token: _token || '',
         username,
         password
-      }))
+      }), {
+        headers: {
+          Referer: 'https://osu.ppy.sh/home'
+        }
+      })
 
       this.loggedIn = true
       return true
     } catch {
+      console.log('osu provider failed')
       return false
     }
   }
@@ -66,7 +71,10 @@ export class OsuWebsiteProvider extends BaseProvider {
       params: {
         noVideo: noVideo ? 1 : 0
       },
-      responseType: 'stream'
+      responseType: 'stream',
+      headers: {
+        Referer: `https://osu.ppy.sh/beatmapsets/${beatmapsetID}`
+      }
     })
   }
 }
