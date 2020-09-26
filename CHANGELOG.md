@@ -1,5 +1,17 @@
 # Changelog
 
+## [v0.1.3](https://github.com/loarca/osu-map-dl/tree/v0.1.3) (2020-09-25)
+
+[Full Changelog](https://github.com/loarca/osu-map-dl/compare/v0.1.2...v0.1.3)
+
+**Fixed bugs:**
+
+- Download functions are not working for the osu provider [\#13](https://github.com/loarca/osu-map-dl/issues/13)
+
+**Merged pull requests:**
+
+- fix \#13 [\#14](https://github.com/loarca/osu-map-dl/pull/14) ([wykke](https://github.com/wykke))
+
 ## [v0.1.2](https://github.com/loarca/osu-map-dl/tree/v0.1.2) (2019-12-26)
 
 [Full Changelog](https://github.com/loarca/osu-map-dl/compare/v0.1.1...v0.1.2)
