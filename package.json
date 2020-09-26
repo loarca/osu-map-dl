@@ -7,6 +7,9 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint src/*.ts",
+    "bump-version:patch": "npm version patch --sign-git-tag -f",
+    "bump-version:minor": "npm version minor --sign-git-tag -f",
+    "bump-version:major": "npm version major --sign-git-tag -f",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
